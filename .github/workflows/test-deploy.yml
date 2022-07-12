@@ -18,6 +18,6 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: node install --frozen-lockfile
-      - name: Test build website
-        run: node build
+        run: npm install --frozen-lockfile
+      - name: Build website
+        run: npm run build
